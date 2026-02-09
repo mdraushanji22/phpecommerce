@@ -18,8 +18,8 @@
                     <h5>Contact Us</h5>
                     <p>
                         <i class="bi bi-envelope"></i> support@ecommerce.com<br>
-                        <i class="bi bi-telephone"></i> +91 1234567890<br>
-                        <i class="bi bi-geo-alt"></i> Mumbai, India
+                        <i class="bi bi-telephone"></i> +91 6280779503<br>
+                        <i class="bi bi-geo-alt"></i> Delhi, India
                     </p>
                 </div>
             </div>
@@ -32,8 +32,9 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="<?php echo SITE_URL; ?>/assets/js/main.js"></script>
-</body>
-</html>
+    </body>
+
+    </html>

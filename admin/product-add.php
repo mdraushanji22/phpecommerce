@@ -33,12 +33,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         if (empty($error)) {
-            // Insert product
+            // Get next ID
+            $lastId = $db->query("SELECT id FROM products ORDER BY id DESC LIMIT 1")->fetchColumn();
+            $nextId = $lastId ? $lastId + 1 : 1;
+
+            // Insert product with specific ID
             $stmt = $db->prepare("
-                INSERT INTO products (category_id, title, description, price, stock, status, image)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO products (id, category_id, title, description, price, stock, status, image)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             ");
-            $stmt->execute([$categoryId, $title, $description, $price, $stock, $status, $imageName]);
+            $stmt->execute([$nextId, $categoryId, $title, $description, $price, $stock, $status, $imageName]);
 
             setFlashMessage('success', 'Product added successfully');
             header('Location: ' . ADMIN_URL . '/products.php');
