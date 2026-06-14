@@ -289,3 +289,4 @@ This project is created for educational purposes. Feel free to use and modify.
 **Version:** 1.0.0  
 **Last Updated:** February 9, 2026
 ## This is ecommerce website using PHP
+## Ecommerce website used to all working 
