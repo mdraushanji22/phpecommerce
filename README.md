@@ -281,6 +281,7 @@ This project is created for educational purposes. Feel free to use and modify.
 - Wishlist functionality
 - Advanced search filters
 - Multi-language support
+- me Raushan 
 
 ---
 
