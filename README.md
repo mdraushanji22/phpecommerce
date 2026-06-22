@@ -291,4 +291,5 @@ This project is created for educational purposes. Feel free to use and modify.
 **Last Updated:** February 9, 2026
 ## This is ecommerce website using PHP
 ## Ecommerce website used to all working 
-This website connect with admin panel 
+This website connect with admin panel
+This is Full stack website with admin panel 
